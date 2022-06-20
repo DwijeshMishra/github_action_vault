@@ -27,5 +27,5 @@ jobs:
               with:
                 tlsSkipVerify: true
                 url: https://vault-cluster-public-vault-9ade6c27.17f31b6f.z1.hashicorp.cloud:8200
-                token: hvs.CAESIOaip2T7O48X8FbPLcqm2QYbYxvjANWzqQGVgBGEuoMnGigKImh2cy5Ld2R6MTdSdDZNRDEwZnZzWlhsWDRkbEYudUlzSnUQ_L0C
-                secrets: test token | token
+                token: hvs.CAESIIBzmjpma___VAYLPhFwkKOvvTZ0KN7sY6vbcTfben5CGigKImh2cy5hMzhrN2x4azhXS0FBTndUdzhTYURkMHgudUlzSnUQ770C
+                secrets: secret/demo bar | bar
