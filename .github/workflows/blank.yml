@@ -22,10 +22,13 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-            - name: import secrets
-              uses: hashicorp/vault-action@v2.4.0
-              with:
-                tlsSkipVerify: true
-                url: https://vault-cluster-public-vault-9ade6c27.17f31b6f.z1.hashicorp.cloud:8200
-                token: hvs.CAESID3eegTeQTAu5lgiiC8BHmzYt45OLm0DR6hI00APptFKGigKImh2cy51bDh6YzcybkZDdXZjdnc1MmRXcGlOZjIudUlzSnUQyMAC
-                secrets: secret/demo bar | bar
+      - uses: actions/checkout@v2
+      - name: Import Secrets
+        uses: hashicorp/vault-action@v2.2.0
+        env:
+            ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
+        with:
+            tlsSkipVerify: true
+            url: https://vault-cluster-public-vault-9ade6c27.17f31b6f.z1.hashicorp.cloud:8200
+            token: hvs.CAESID3eegTeQTAu5lgiiC8BHmzYt45OLm0DR6hI00APptFKGigKImh2cy51bDh6YzcybkZDdXZjdnc1MmRXcGlOZjIudUlzSnUQyMAC
+            secrets: secret/demo bar | bar
