@@ -25,6 +25,7 @@ jobs:
             - name: import secrets
               uses: hashicorp/vault-action@v2.4.0
               with:
+                tlsSkipVerify: true
                 url: https://vault-cluster-public-vault-9ade6c27.17f31b6f.z1.hashicorp.cloud:8200
                 token: hvs.CAESIAzlEyn_AIrqDyo3dT5wDUpl8ZNMRHheNO1x6TvJ-rVgGigKImh2cy5kamxsaDBuZnJJaWIzeUVnR0pWbE9oTjMudUlzSnUQvbMC
                 secrets: secret/data/kv token | token
