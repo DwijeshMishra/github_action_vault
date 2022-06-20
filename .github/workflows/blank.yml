@@ -27,4 +27,4 @@ jobs:
               with:
                 url: https://vault-cluster-public-vault-9ade6c27.17f31b6f.z1.hashicorp.cloud:8200
                 token: hvs.CAESIAzlEyn_AIrqDyo3dT5wDUpl8ZNMRHheNO1x6TvJ-rVgGigKImh2cy5kamxsaDBuZnJJaWIzeUVnR0pWbE9oTjMudUlzSnUQvbMC
-                secrets: kv/test/token token 
+                secrets: /cubbyhole/test/token token
